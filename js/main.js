@@ -122,23 +122,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-links a');
+    const pillNav = document.querySelector('.pill-nav-v4');
 
     if (mobileToggle) {
         mobileToggle.addEventListener('click', () => {
             mobileToggle.classList.toggle('active');
             navLinks.classList.toggle('active');
+            pillNav.classList.toggle('active');
 
             // Prevent scrolling when menu is open
-            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+            document.body.style.overflow = pillNav.classList.contains('active') ? 'hidden' : 'auto';
         });
     }
 
     // Close menu when link is clicked
     navItems.forEach(item => {
         item.addEventListener('click', () => {
-            if (mobileToggle.classList.contains('active')) {
+            if (pillNav.classList.contains('active')) {
                 mobileToggle.classList.remove('active');
                 navLinks.classList.remove('active');
+                pillNav.classList.remove('active');
                 document.body.style.overflow = 'auto';
             }
         });
