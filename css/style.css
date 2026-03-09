@@ -207,6 +207,8 @@ body.no-scroll {
     /* Force solid white */
     opacity: 1 !important;
     /* Force full visibility */
+    display: flex;
+    flex-direction: column;
 }
 
 .brand-text {
@@ -973,10 +975,12 @@ body.no-scroll {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: auto;
+        flex-grow: 1;
+        /* Take up all available space */
         justify-content: center;
-        padding-bottom: 50px;
-        gap: 30px;
+        /* Center links vertically */
+        padding-bottom: 20px;
+        gap: 35px;
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
