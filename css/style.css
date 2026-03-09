@@ -41,6 +41,10 @@ body {
     font-weight: 500;
 }
 
+body.no-scroll {
+    overflow: hidden !important;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1004,7 +1008,8 @@ body {
     }
 
     .hero-v4 {
-        padding-top: 120px;
+        padding-top: 180px;
+        /* Increased spacing between nav and hero badge */
     }
 
     .layered-image-container {

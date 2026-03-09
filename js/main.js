@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
             pillNav.classList.toggle('active');
 
             // Prevent scrolling when menu is open
-            document.body.style.overflow = pillNav.classList.contains('active') ? 'hidden' : 'auto';
+            document.body.classList.toggle('no-scroll');
         });
     }
 
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 mobileToggle.classList.remove('active');
                 navLinks.classList.remove('active');
                 pillNav.classList.remove('active');
-                document.body.style.overflow = 'auto';
+                document.body.classList.remove('no-scroll');
             }
         });
     });
