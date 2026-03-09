@@ -132,6 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Prevent scrolling when menu is open
             document.body.classList.toggle('no-scroll');
+            document.documentElement.classList.toggle('no-scroll');
         });
     }
 
@@ -143,6 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 navLinks.classList.remove('active');
                 pillNav.classList.remove('active');
                 document.body.classList.remove('no-scroll');
+                document.documentElement.classList.remove('no-scroll');
             }
         });
     });

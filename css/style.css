@@ -41,8 +41,10 @@ body {
     font-weight: 500;
 }
 
+html.no-scroll,
 body.no-scroll {
     overflow: hidden !important;
+    height: 100vh !important;
 }
 
 .container {
@@ -201,6 +203,10 @@ body.no-scroll {
     height: calc(100vh - 40px);
     width: 94%;
     border-radius: 40px;
+    background-color: #ffffff !important;
+    /* Force solid white */
+    opacity: 1 !important;
+    /* Force full visibility */
 }
 
 .brand-text {
@@ -1008,7 +1014,7 @@ body.no-scroll {
     }
 
     .hero-v4 {
-        padding-top: 180px;
+        padding-top: 230px;
         /* Increased spacing between nav and hero badge */
     }
 
