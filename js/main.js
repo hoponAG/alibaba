@@ -118,6 +118,32 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power2.out"
     });
 
+    // Mobile Toggle Logic
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+
+            // Prevent scrolling when menu is open
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+        });
+    }
+
+    // Close menu when link is clicked
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (mobileToggle.classList.contains('active')) {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+
     // Footer Elements
     gsap.from(".footer-grid-layout > *", {
         scrollTrigger: {
