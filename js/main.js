@@ -1,144 +1,134 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Basic GSAP Setup
     gsap.registerPlugin(ScrollTrigger);
 
-    const tl = gsap.timeline();
+    // Initial Navbar Animation
+    gsap.from(".pill-nav-v4", {
+        y: -100,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.2
+    });
 
-    // 1. Initial Hero entry
-    tl.from(".subtext", {
+    // Hero GSAP Sequencer
+    const tl = gsap.timeline();
+    tl.from(".hero-bg-text", {
+        scale: 0.8,
+        opacity: 0,
+        duration: 1.5,
+        ease: "power2.out"
+    })
+        .from(".hero-left > *", {
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power3.out"
+        }, "-=1")
+        .from(".layered-image-container", {
+            x: 100,
+            scale: 0.9,
+            opacity: 0,
+            duration: 1.2,
+            ease: "back.out(1.2)"
+        }, "-=0.8")
+        .from(".main-float-img", {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: "back.out(1.5)"
+        }, "-=0.5")
+        .from(".secondary-float-img", {
+            scale: 0,
+            opacity: 0,
+            rotation: 20,
+            duration: 0.8,
+            ease: "back.out(1.7)"
+        }, "-=0.2")
+        .from(".floating-circle-badge", {
+            scale: 0,
+            opacity: 0,
+            rotation: -45,
+            duration: 0.6,
+            ease: "back.out(2)"
+        }, "-=0.4");
+
+    // Scroll Triggers - About
+    gsap.from(".about-v4 .section-title, .about-v4 .section-subtitle, .about-v4 .body-text", {
+        scrollTrigger: {
+            trigger: ".about-v4",
+            start: "top 75%",
+        },
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2
+    });
+
+    // Arches (Features) Entrance
+    gsap.from(".arch-box", {
+        scrollTrigger: {
+            trigger: ".features-arches",
+            start: "top 80%",
+        },
+        y: 80,
+        opacity: 0,
+        rotation: (index) => (index % 2 === 0 ? 5 : -5),
+        duration: 1,
+        stagger: 0.2,
+        ease: "back.out(1.2)"
+    });
+
+    // Menu Pill Tabs Logic
+    const tabs = document.querySelectorAll('.pill-tab');
+    const contents = document.querySelectorAll('.menu-cat-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active from all
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+
+            // Add active to current
+            tab.classList.add('active');
+            const targetId = `cat-${tab.getAttribute('data-cat')}`;
+            const targetContent = document.getElementById(targetId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+                // Optional: Scroll to top of menu container on switch for mobile clarity
+                // targetContent.parentElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Enter Menu Animation - Removed stagger to keep tabs stable
+    // Previously: gsap.from(".menu-pill-tabs .pill-tab", { ... })
+
+    // Reviews Entrance
+    gsap.from(".r-box", {
+        scrollTrigger: {
+            trigger: ".reviews-v4",
+            start: "top 80%",
+        },
         y: 50,
         opacity: 0,
         duration: 0.8,
-        ease: "power4.out"
-    })
-        .from(".hero-title", {
-            y: 100,
-            opacity: 0,
-            duration: 1.2,
-            ease: "power4.out"
-        }, "-=0.6")
-        .from(".hero-desc", {
-            y: 30,
-            opacity: 0,
-            duration: 1,
-            ease: "power3.out"
-        }, "-=0.8")
-        .from(".btn-discover", {
-            scale: 0.5,
-            opacity: 0,
-            duration: 0.6,
-            ease: "back.out(1.7)"
-        }, "-=0.6");
-
-    // 2. Main Logo Entry
-    tl.from(".main-hero-logo", {
-        scale: 0.5,
-        opacity: 0,
-        rotation: 15,
-        duration: 1.5,
-        ease: "back.out(1.2)"
-    }, "-=1.2");
-
-    // 3. Parallax for Logo and About Vector
-    gsap.to(".main-hero-logo", {
-        yPercent: -10,
-        rotation: "-=5",
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".hero-section",
-            start: "top top",
-            end: "bottom top",
-            scrub: true
-        }
-    });
-
-    gsap.to(".about-vector-bg", {
-        yPercent: 30,
-        rotation: "+=15",
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".about-section",
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true
-        }
-    });
-
-    // 4. Fade in Sections on Scroll
-    const defaultScrollSettings = {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out"
-    };
-
-    gsap.from(".about-grid > *", {
-        ...defaultScrollSettings,
         stagger: 0.2,
-        scrollTrigger: { trigger: ".about-section", start: "top 70%" }
+        ease: "power2.out"
     });
 
-    gsap.from(".photo-grid img", {
-        ...defaultScrollSettings,
-        scale: 0.9,
-        stagger: 0.1,
-        scrollTrigger: { trigger: ".gallery-section", start: "top 70%" }
-    });
-
-    gsap.from(".review-card", {
-        ...defaultScrollSettings,
-        y: 80,
+    // Footer Elements
+    gsap.from(".footer-grid-layout > *", {
+        scrollTrigger: {
+            trigger: ".footer-v4",
+            start: "top 85%",
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
         stagger: 0.15,
-        scrollTrigger: { trigger: ".reviews-section", start: "top 75%" }
+        ease: "power2.out"
     });
 
-    gsap.from(".contact-grid > *", {
-        ...defaultScrollSettings,
-        stagger: 0.2,
-        scrollTrigger: { trigger: ".contact-section", start: "top 80%" }
-    });
-
-    // 5. Fullscreen Nav Toggle logic
-    const menuToggle = document.getElementById('menuToggle');
-    const fullNav = document.getElementById('fullNav');
-    const navLinks = document.querySelectorAll('.fullscreen-nav a');
-
-    menuToggle.addEventListener('click', () => {
-        fullNav.classList.toggle('open');
-    });
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            fullNav.classList.remove('open');
-        });
-    });
-
-    // 6. Menu Tabs Logic
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.menu-tab-content');
-
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Remove active from all
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabContents.forEach(c => c.classList.remove('active'));
-
-            // Add active to clicked
-            btn.classList.add('active');
-            const targetId = btn.getAttribute('data-target');
-            document.getElementById(targetId).classList.add('active');
-
-            // Re-trigger GSAP animation slightly for effect (Optional, but looks nice)
-            gsap.fromTo(`#${targetId} .menu-item`, {
-                y: 20, opacity: 0
-            }, {
-                y: 0, opacity: 1, duration: 0.4, stagger: 0.05, ease: "power2.out"
-            });
-        });
-    });
-
-    // Initial animation for first tab
-    gsap.from("#broodjes-durum .menu-item", {
-        y: 20, opacity: 0, duration: 0.4, stagger: 0.05, ease: "power2.out",
-        scrollTrigger: { trigger: ".menu-section", start: "top 60%" }
-    });
 });
