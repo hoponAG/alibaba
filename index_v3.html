@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Baba - Kebab, Pizza & Friet in Hasselt | Mascot Edition (V3)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style_v3.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header-v3">
+        <div class="logo-area">
+            <span class="logo-text">ALI BABA</span>
+        </div>
+        <nav class="nav-v3">
+            <a href="#about" class="nav-link">Ons Verhaal</a>
+            <a href="#menu" class="nav-link">Lekkernijen</a>
+            <a href="#sfeer" class="nav-link">Sfeer</a>
+            <a href="#contact" class="btn-primary">BESTELLEN!</a>
+        </nav>
+
+        <!-- Mobile hamburger -->
+        <div class="mobile-menu-btn">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-v3">
+            <div class="hero-content">
+                <div class="hero-text-box">
+                    <h1 class="hero-title">
+                        De Grote <span class="highlight">Honger</span> Stopt Hier!
+                    </h1>
+                    <p class="hero-desc">Hoi! Ik ben Ali Baba. Zin in royale kebab, perfect gebakken frietjes of een
+                        knapperige pizza? Ik heb je rug!</p>
+                    <a href="#menu" class="btn-secondary">Check het Menu</a>
+                </div>
+            </div>
+
+            <!-- The Mascot in the Center/Right -->
+            <div class="mascot-wrapper">
+                <img src="Assets/logo.png" alt="Ali Baba Mascot" class="mascot-img">
+                <div class="mascot-shadow"></div>
+            </div>
+
+            <!-- Floating food illustrations -->
+            <img src="Assets/Objects/Gemini_Generated_Image_eutmfqeutmfqeutm-removebg-preview.png"
+                class="floating-food food-1" alt="Schotel">
+            <img src="Assets/Vectors/Gemini_Generated_Image_tyzo88tyzo88tyzo.png" class="floating-food food-2"
+                alt="Frietjes Vector">
+
+            <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C400,120 800,0 1440,60 L1440,120 L0,120 Z" fill="#F8F3EB"></path>
+            </svg>
+        </section>
+
+        <!-- Intro / About -->
+        <section class="about-v3" id="about">
+            <div class="container about-grid">
+                <div class="about-mascot-box">
+                    <!-- Mascot peeking -->
+                    <img src="Assets/logo.png" alt="Ali Baba mascot peeking" class="mascot-peeking">
+                    <div class="speech-bubble">
+                        "Altijd vers van de grill en met een brede lach geserveerd!"
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h2 class="section-title">Niet zomaar een snackbar.</h2>
+                    <p>Bij Ali Baba maken we alles groot, lekker en vers. Sinds jaar en dag dé plek in Hasselt voor een
+                        stevige hap. Onze deuren staan altijd wagenwijd voor je open en onze grill is altijd
+                        knetterheet.</p>
+                    <div class="features-pill">
+                        <span class="pill">🔥 Recht van de grill</span>
+                        <span class="pill">🍕 Ovenverse pizza's</span>
+                        <span class="pill">🥗 Knapperige veggies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Menu Highlights (not full menu) -->
+        <section class="menu-highlights-v3" id="menu">
+            <svg class="top-wave" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,100 C300,0 600,100 1440,0 L1440,0 L0,0 Z" fill="#F8F3EB"></path>
+            </svg>
+
+            <div class="container text-center">
+                <h2 class="section-title text-light" style="margin-bottom: 50px;">Wat de Chef Aanraadt</h2>
+
+                <div class="menu-cards-grid">
+                    <!-- Card 1 -->
+                    <div class="fun-card card-kebab">
+                        <div class="card-icon">🌯</div>
+                        <h3>Roll it Up!</h3>
+                        <p>Onze beroemde durums en pittas. Gemaakt met kip, biefstuk, gehakt of heerlijk vegetarisch.
+                        </p>
+                        <span class="price-tag">Vanaf €7.50</span>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="fun-card card-schotel">
+                        <div class="card-icon">🍽️</div>
+                        <h3>Machtige Schotels</h3>
+                        <p>Enorme porties met krokante frietjes of smaakvolle rijst, frisse salade en véél vlees.</p>
+                        <span class="price-tag">Vanaf €17</span>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="fun-card card-pizza">
+                        <div class="card-icon">🍕</div>
+                        <h3>Pizza Party</h3>
+                        <p>Van de klassieke Margherita tot de overvolle Ali Baba pizza. Kakelvers uit de oven.</p>
+                        <span class="price-tag">Vanaf €10</span>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="fun-card card-friet">
+                        <div class="card-icon">🍟</div>
+                        <h3>Friet & Burgers</h3>
+                        <p>Zin in échte Belgische friet of een legendarische Bicky Burger? Say no more.</p>
+                        <span class="price-tag">Vanaf €2</span>
+                    </div>
+                </div>
+
+                <!-- CTA to full menu (mocked as button) -->
+                <div style="margin-top: 60px;">
+                    <button class="btn-primary"
+                        onclick="alert('Hier opent straks je gedetailleerde menukaart (volledige weergave)!')">Bekijk de
+                        Volledige Menukaart</button>
+                    <!-- Kleine grappige visual mascot -->
+                    <img src="Assets/logo.png" class="tiny-hover-mascot" alt="Mascot">
+                </div>
+            </div>
+
+            <svg class="bottom-wave" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,0 C300,100 600,0 1440,100 L1440,100 L0,100 Z" fill="#F8F3EB"></path>
+            </svg>
+        </section>
+
+        <!-- Sfeer Gallery - Polaroid Style -->
+        <section class="gallery-v3" id="sfeer">
+            <div class="container text-center">
+                <h2 class="section-title">Kijkje in de keuken</h2>
+                <div class="polaroid-grid">
+                    <div class="polaroid">
+                        <div class="p-img"><img src="Assets/Beelden/fresh_falafel_1772932413809.png" alt="Falafel">
+                        </div>
+                        <div class="p-caption">Krokante falafel! ✨</div>
+                    </div>
+                    <div class="polaroid">
+                        <div class="p-img"><img src="Assets/Beelden/kebab_durum_1772932360114.png" alt="Durum"></div>
+                        <div class="p-caption">The Perfect Roll 🌯</div>
+                    </div>
+                    <div class="polaroid">
+                        <div class="p-img"><img src="Assets/Beelden/loaded_fries_1772932388219.png" alt="Frietjes">
+                        </div>
+                        <div class="p-caption">Loaded friet... oh my 🤤</div>
+                    </div>
+                    <div class="polaroid">
+                        <div class="p-img"><img src="Assets/Beelden/pizza_board_1772932374995.png" alt="Pizza"></div>
+                        <div class="p-caption">Pizza Time! 🍕</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews: Bubbles -->
+        <section class="reviews-v3">
+            <div class="container text-center">
+                <h2 class="section-title">Onze Vrienden Zeggen:</h2>
+                <div class="bubbles-wrap">
+                    <div class="review-bubble r1">
+                        <p>"Beste kapsalon van Hasselt, hands down! Super grote porties."</p>
+                        <strong>- Jeroen P.</strong>
+                    </div>
+                    <div class="review-bubble r2">
+                        <p>"Super verse pizza's, snelle service en de baas lacht altijd!"</p>
+                        <strong>- Sarah E.</strong>
+                    </div>
+                    <div class="review-bubble r3">
+                        <p>"Al jaren vaste klant. De bicky burgers zijn top tier."</p>
+                        <strong>- Kevin B.</strong>
+                    </div>
+                </div>
+                <!-- Mascot hangt onder de reviews -->
+                <div class="review-mascot-wrap">
+                    <img src="Assets/logo.png" alt="Mascot Happy" class="review-mascot">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Footer -->
+        <footer class="footer-v3" id="contact">
+            <svg class="footer-wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,0 C600,120 800,0 1440,120 L1440,140 L0,140 Z" fill="#1e293b"></path>
+            </svg>
+            <div class="footer-content">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-col">
+                            <h1>ALI BABA</h1>
+                            <p>Jouw honger, onze zorg. Tot snel!</p>
+                        </div>
+                        <div class="footer-col">
+                            <h3>Kom Langs</h3>
+                            <p>Tongersesteenweg 275<br>3724 Hasselt</p>
+                        </div>
+                        <div class="footer-col">
+                            <h3>Openingsuren</h3>
+                            <p>Ma - Do: 16:00 - 22:00<br>Vr - Zo: 16:00 - 23:30</p>
+                        </div>
+                        <div class="footer-col d-flex">
+                            <a href="tel:+32490466548" class="btn-primary" style="font-size:1.5rem;">Bel: 0490 46 65
+                                48</a>
+                        </div>
+                    </div>
+
+                    <!-- Klein mascotte hoekje in de footer -->
+                    <img src="Assets/logo.png" class="footer-mascot" alt="bye">
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main_v3.js"></script>
+</body>
+
+</html>

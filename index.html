@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Baba - Kebab, Pizza & Friet in Hasselt</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header-left">
+            <div class="menu-widget" id="menuToggle">
+                <svg class="pizza-text-circle" viewBox="0 0 100 100" width="80" height="80">
+                    <defs>
+                        <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+                    </defs>
+                    <text>
+                        <textPath href="#circlePath" startOffset="0%">
+                            MENU • MENU • MENU • MENU •
+                        </textPath>
+                    </text>
+                </svg>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <img src="Assets/logo.png" alt="Ali Baba" class="main-logo">
+        </div>
+
+        <div class="header-right">
+            <a href="#contact" class="btn-bestellen">BESTELLEN</a>
+        </div>
+    </header>
+
+    <!-- Fullscreen Menu Navigation (hidden by default) -->
+    <nav class="fullscreen-nav" id="fullNav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#over-ons">Over Ons</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#sfeer">Sfeer</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <span class="subtext">Snackbar</span>
+                <h1 class="hero-title">ALI<br>BABA</h1>
+                <p class="hero-desc">
+                    De beste kebab, durums, pizza's en frieten van de streek.<br>
+                    Volledig vers, rechtstreeks van de grill.
+                </p>
+                <a href="#menu" class="btn-discover">Ontdek de Kaart</a>
+            </div>
+
+            <div class="hero-visual">
+                <!-- Main floating logo (groot & rechts geplaatst) -->
+                <img src="Assets/logo.png" alt="Ali Baba Logo" class="main-hero-logo">
+            </div>
+        </section>
+
+        <!-- Wave Transition to Light -->
+        <div class="wave-transition">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C320,120 420,0 740,60 C1060,120 1160,0 1440,60 L1440,120 L0,120 Z" fill="#F8F3EB"></path>
+            </svg>
+        </div>
+
+        <!-- Over Ons Section -->
+        <section class="about-section" id="over-ons">
+            <!-- Vector as background on the white -->
+            <img src="Assets/Vectors/Gemini_Generated_Image_tyzo88tyzo88tyzo.png" alt="Vector Frietjes"
+                class="about-vector-bg">
+
+            <div class="container text-center" style="position:relative; z-index:2;">
+                <h2 class="section-title dark">OVER ONS</h2>
+                <div class="about-grid">
+                    <img src="Assets/Beelden/snackbar_interior_1772932400776.png" class="about-img"
+                        alt="Interieur Ali Baba">
+                    <div class="about-text">
+                        <p>Ali Baba is dé plek voor een heerlijke, snelle hap in een gezellige sfeer.</p>
+                        <p>Elke dag vers, bereid met passie. Onze porties zijn gigantisch en de pure smaak van ambacht
+                            kún je hier gewoon proeven. Met jarenlange ervaring garanderen we de beste kwaliteit.</p>
+                        <a href="#contact" class="btn-black">Kom Langs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Transition to Orange -->
+        <div class="wave-transition-2">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,120 C320,60 420,120 740,60 C1060,0 1160,60 1440,0 L1440,120 L0,120 Z" fill="#f26b21"></path>
+            </svg>
+        </div>
+
+        <!-- MENU SECTION -->
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <h2 class="section-title text-center text-light">ONZE KAART</h2>
+                <p class="text-center lead text-light" style="margin-bottom: 40px;">Met liefde bereid, direct voor jou.
+                </p>
+
+                <!-- Tabs knoppen -->
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-target="broodjes-durum">Broodjes & Durum</button>
+                    <button class="tab-btn" data-target="schotels">Schotels</button>
+                    <button class="tab-btn" data-target="pizza">Pizza's</button>
+                    <button class="tab-btn" data-target="snacks">Friet & Snacks</button>
+                    <button class="tab-btn" data-target="kapsalon">Kapsalon & Bakjes</button>
+                </div>
+
+                <!-- Tabs content -->
+                <div class="menu-content-area">
+
+                    <!-- TAB 1: Broodjes & Durum -->
+                    <div class="menu-tab-content active" id="broodjes-durum">
+                        <div class="menu-grid full-width">
+                            <div class="menu-item">
+                                <div class="item-header"><span>Biefstuk</span> <span class="price">€9 / €13</span></div>
+                                <div class="item-desc">Broodje (Klein / Groot) • Durum: €9.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Gehakt</span> <span class="price">€7.50 / €12</span>
+                                </div>
+                                <div class="item-desc">Broodje (Klein / Groot) • Durum: €8</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kip</span> <span class="price">€9.50 / €12</span></div>
+                                <div class="item-desc">Broodje (Klein / Groot) • Durum: €10</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Mix (Kebab + Kip)</span> <span class="price">€10.50 /
+                                        €14.50</span></div>
+                                <div class="item-desc">Broodje (Klein / Groot) • Durum: €10.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Pitta</span> <span class="price">€8.50 / €11.50</span>
+                                </div>
+                                <div class="item-desc">Broodje (Klein / Groot) • Durum: €9</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Köfte</span> <span class="price">€9.50 / €13.50</span>
+                                </div>
+                                <div class="item-desc">Broodje (Klein / Groot) • Durum: €7.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Falafel</span> <span class="price">€8.50 / €10</span>
+                                </div>
+                                <div class="item-desc">Broodje (Klein / Groot) • Durum: €7.50</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Veggie</span> <span class="price">€7.50 / €9.50</span>
+                                </div>
+                                <div class="item-desc">Broodje (Klein / Groot) • Durum: €7</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Special</span> <span class="price">€11.50 / €14.50</span>
+                                </div>
+                                <div class="item-desc">Champignons + Paprika + Uien • Durum: €11</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2: Schotels -->
+                    <div class="menu-tab-content" id="schotels">
+                        <div class="menu-grid full-width">
+                            <div class="menu-item">
+                                <div class="item-header"><span>Biefstuk</span> <span class="price">€20</span></div>
+                                <div class="item-desc">Met friet of rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Gehakt</span> <span class="price">€18</span></div>
+                                <div class="item-desc">Met friet of rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kip</span> <span class="price">€19.50</span></div>
+                                <div class="item-desc">Met friet of rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Mixed (Kebab + Kip)</span> <span class="price">€22</span>
+                                </div>
+                                <div class="item-desc">Met friet of rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Pitta</span> <span class="price">€19.50</span></div>
+                                <div class="item-desc">Met friet of rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Köfte</span> <span class="price">€21</span></div>
+                                <div class="item-desc">Met friet of rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Alibaba</span> <span class="price">€25.50</span></div>
+                                <div class="item-desc">Met friet of rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Veggie</span> <span class="price">€17</span></div>
+                                <div class="item-desc">Met friet of rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Special</span> <span class="price">€22.50</span></div>
+                                <div class="item-desc">Met friet of rijst (Champignons + Paprika + Uien)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3: Pizza -->
+                    <div class="menu-tab-content" id="pizza">
+                        <div class="menu-grid full-width">
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bambino</span> <span class="price">€10</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Margherita</span> <span class="price">€11</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>4 Kazen</span> <span class="price">€15</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Cipolla</span> <span class="price">€12</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, ajuin en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Napolitana</span> <span class="price">€12.50</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, ansjovis en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Pepperoni</span> <span class="price">€12</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, paprika en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Funghi</span> <span class="price">€12</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, champignons en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Prosciutto</span> <span class="price">€12</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, ham en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bolognaise</span> <span class="price">€12</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, gehakt en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Capricciosa</span> <span class="price">€13</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, ham, champignons en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Hawai</span> <span class="price">€13</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, ham, ananas en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Pollo</span> <span class="price">€14</span></div>
+                                <div class="item-desc">Paprika, kip en ajuin</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Tonno</span> <span class="price">€14</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, tonijn, ajuin en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Frutti di Mare</span> <span class="price">€16</span>
+                                </div>
+                                <div class="item-desc">Tomatensaus, mozzarella, zeevruchten en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Scampi</span> <span class="price">€16</span></div>
+                                <div class="item-desc">Tomatensaus, mozzarella, scampi's en oregano</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Mafioso</span> <span class="price">€14</span></div>
+                                <div class="item-desc">Champignons, paprika en lookworst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Quattro Stagione</span> <span class="price">€14</span>
+                                </div>
+                                <div class="item-desc">Paprika, ham, champignons en salami</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Vegetale</span> <span class="price">€13.50</span></div>
+                                <div class="item-desc">Artisjok, champignons, paprika en ui</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Calzone</span> <span class="price">€14</span></div>
+                                <div class="item-desc">Gesloten, Artisjok, champignons, paprika, gehakt en salami</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Ali Baba</span> <span class="price">€16</span></div>
+                                <div class="item-desc">Kip, kebabvlees, champignons, paprika en ajuin</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kebap</span> <span class="price">€14</span></div>
+                                <div class="item-desc">Kebabvlees, paprika en ajuin</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Farha Tikka</span> <span class="price">€15</span></div>
+                                <div class="item-desc">Champi, salami, gehakt, pap en ajuin</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Mixt</span> <span class="price">€15</span></div>
+                                <div class="item-desc">Champignons, salami, gehakt, paprika en ajuin</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4: Snacks -->
+                    <div class="menu-tab-content" id="snacks">
+                        <div class="menu-grid full-width">
+                            <!-- Friet -->
+                            <div class="menu-item">
+                                <div class="item-header"><span>Smurf Friet</span> <span class="price">€2</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Friet (Klein / Medium / Groot)</span> <span
+                                        class="price">€3 / €4 / €5</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Family</span> <span class="price">€8.50</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kidsbox</span> <span class="price">€7.50</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Stoofvlees / Goulash</span> <span
+                                        class="price">€16</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Stoofvleessaus / Goulashsaus</span> <span
+                                        class="price">€3</span></div>
+                            </div>
+                            <!-- Burgers -->
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bicky Burger</span> <span class="price">€4.80</span>
+                                </div>
+                                <div class="item-desc">Gedroogde ajuin, bicky saus en augurken</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bicky Fish</span> <span class="price">€5.70</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bicky Chicken</span> <span class="price">€5.20</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bicky Veggie</span> <span class="price">€5.20</span>
+                                </div>
+                            </div>
+                            <!-- Snacks -->
+                            <div class="menu-item">
+                                <div class="item-header"><span>Cervela</span> <span class="price">€3.80</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Frikandel</span> <span class="price">€2.20</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Frikandel XXL</span> <span class="price">€4.50</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Boulet / Viandel</span> <span class="price">€3</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Sito</span> <span class="price">€4.50</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Saté</span> <span class="price">€4.50</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Mexicano</span> <span class="price">€3</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Visstick</span> <span class="price">€3.80</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kipkorn</span> <span class="price">€3</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kipvinger / Chibes (5)</span> <span
+                                        class="price">€4</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Barehap (Crizly)</span> <span class="price">€4.50</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kippenvleugels (4)</span> <span
+                                        class="price">€6.50</span></div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kipnuggets (5)</span> <span class="price">€3.50</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Mini loempia (6)</span> <span class="price">€3.20</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bamihopper</span> <span class="price">€3</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 5: Kapsalon -->
+                    <div class="menu-tab-content" id="kapsalon">
+                        <div class="menu-grid full-width">
+                            <!-- Kapsalon -->
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kapsalon Biefstuk</span> <span
+                                        class="price">€13.50</span></div>
+                                <div class="item-desc">met Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kapsalon Gehakt</span> <span class="price">€12</span>
+                                </div>
+                                <div class="item-desc">met Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kapsalon Kip</span> <span class="price">€13</span></div>
+                                <div class="item-desc">met Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kapsalon Mixed (Kebab + Kip)</span> <span
+                                        class="price">€14</span></div>
+                                <div class="item-desc">met Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kapsalon Pitta</span> <span class="price">€13.50</span>
+                                </div>
+                                <div class="item-desc">met Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Kapsalon Veggie</span> <span class="price">€11</span>
+                                </div>
+                                <div class="item-desc">met Friet of Rijst</div>
+                            </div>
+                            <!-- Bakjes Vlees + Friet of Rijst -->
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Biefstuk (Menu)</span> <span
+                                        class="price">€12.50</span></div>
+                                <div class="item-desc">Vlees + Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Gehakt (Menu)</span> <span
+                                        class="price">€11.50</span></div>
+                                <div class="item-desc">Vlees + Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Kip (Menu)</span> <span class="price">€12</span>
+                                </div>
+                                <div class="item-desc">Vlees + Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Mix (Menu)</span> <span class="price">€13</span>
+                                </div>
+                                <div class="item-desc">Vlees + Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Falafel (Menu)</span> <span class="price">€9</span>
+                                </div>
+                                <div class="item-desc">Vlees + Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Veggie (Menu)</span> <span class="price">€7</span>
+                                </div>
+                                <div class="item-desc">Vlees + Friet of Rijst</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Special (Menu)</span> <span
+                                        class="price">€13.50</span></div>
+                                <div class="item-desc">Vlees + Friet of Rijst (Champignons + Paprika + Uien)</div>
+                            </div>
+                            <!-- Bakjes Alleen Vlees -->
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Vlees Biefstuk</span> <span class="price">€6 /
+                                        €11.50</span></div>
+                                <div class="item-desc">Enkel Vlees (Klein / Groot)</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Vlees Gehakt</span> <span class="price">€6 /
+                                        €10</span></div>
+                                <div class="item-desc">Enkel Vlees (Klein / Groot)</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Vlees Kip</span> <span class="price">€6 /
+                                        €11</span></div>
+                                <div class="item-desc">Enkel Vlees (Klein / Groot)</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Vlees Mix</span> <span class="price">€6.50 /
+                                        €11.50</span></div>
+                                <div class="item-desc">Enkel Vlees (Klein / Groot)</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Bakje Vlees Pitta</span> <span class="price">€7 /
+                                        €11</span></div>
+                                <div class="item-desc">Enkel Vlees (Klein / Groot)</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header"><span>Tiramisu</span> <span class="price">€4</span></div>
+                                <div class="item-desc">Dessert</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- End Menu Content Area -->
+            </div>
+            <!-- Subtiele Vector Decoratie -->
+            <img src="Assets/Vectors/Gemini_Generated_Image_wdlq9ywdlq9ywdlq-removebg-preview.png" class="menu-vector"
+                alt="Vector Art" style="opacity:0.6; width: 300px; bottom: 0; right:-50px;">
+        </section>
+
+        <!-- Wave Transition Dark to Light for Gallery -->
+        <div class="wave-transition-2" style="background:#F8F3EB;">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,0 C320,60 420,0 740,60 C1060,0 1160,60 1440,0 L1440,120 L0,120 Z" fill="#F8F3EB"></path>
+            </svg>
+        </div>
+
+        <!-- SFEER & FOTO'S SECTION -->
+        <section class="gallery-section" id="sfeer">
+            <div class="container text-center">
+                <h2 class="section-title dark" style="font-size:clamp(3rem, 6vw, 6rem);">ONZE FOTO'S</h2>
+                <div class="photo-grid">
+                    <img src="Assets/Beelden/fresh_falafel_1772932413809.png" alt="Falafel">
+                    <img src="Assets/Beelden/kebab_durum_1772932360114.png" alt="Durum">
+                    <img src="Assets/Beelden/loaded_fries_1772932388219.png" alt="Frietjes">
+                    <img src="Assets/Beelden/pizza_board_1772932374995.png" alt="Pizza" class="wide-photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Transition to Reviews -->
+        <div class="wave-transition-2">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,120 C320,60 420,120 740,60 C1060,0 1160,60 1440,0 L1440,120 L0,120 Z" fill="#f26b21"></path>
+            </svg>
+        </div>
+
+        <!-- REVIEWS SECTION -->
+        <section class="reviews-section" id="reviews"
+            style="background:#f26b21; padding: 100px 5vw; position:relative;">
+            <div class="container text-center">
+                <h2 class="section-title text-light" style="font-size:clamp(3rem, 6vw, 6rem);">WAT ZE ZEGGEN</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <span class="quote">"</span>
+                        <p>Beste kapsalon van Hasselt, handen af! De hoeveelheid vlees is ongekend en superkrokant.</p>
+                        <h4>- Jeroen P.</h4>
+                    </div>
+                    <div class="review-card">
+                        <span class="quote">"</span>
+                        <p>Lekkere pizza's, super vers en heel warme levering. Ik bestel hier wekelijks voor de familie.
+                        </p>
+                        <h4>- Sarah E.</h4>
+                    </div>
+                    <div class="review-card">
+                        <span class="quote">"</span>
+                        <p>Top service. Personeel is altijd vriendelijk en lacht. En de bicky burgers zijn top!</p>
+                        <h4>- Kevin B.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Transition to Dark Footer (Now Black) -->
+        <div class="wave-transition-2" style="background:#f26b21;">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,0 C320,60 420,0 740,60 C1060,0 1160,60 1440,0 L1440,120 L0,120 Z" fill="#111"></path>
+            </svg>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact" style="background:#111; padding: 100px 5vw; color:#F8F3EB;">
+            <div class="container text-center">
+                <h2 class="section-title" style="color:#F8F3EB; font-size:clamp(4rem, 8vw, 8rem);">CONTACT</h2>
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+                        <h3>ALI BABA HASSELT</h3>
+                        <p>Tongersesteenweg 275<br>3724 Hasselt</p>
+                        <br>
+                        <h3>BEL ONS</h3>
+                        <p><a href="tel:+32490466548"
+                                style="color:#f26b21; text-decoration:none; font-size:2rem; font-weight:700; font-family:'Anton';">+32
+                                490 46 65 48</a></p>
+                        <br>
+                        <h3>OPENINGSUREN</h3>
+                        <p>Ma - Do: 16:00 - 22:00<br>Vr - Zo: 16:00 - 23:30</p>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <h3 style="color:#f26b21;">STUUR EEN BERICHT</h3>
+                        <form class="contact-form">
+                            <input type="text" placeholder="Naam" required>
+                            <input type="tel" placeholder="Telefoon" required>
+                            <textarea rows="4" placeholder="Jouw bericht..." required></textarea>
+                            <button type="submit" class="btn-submit">VERZENDEN</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <p class="copyright text-center" style="margin-top:80px; opacity:0.5; font-size:0.9rem;">
+                &copy; 2026 Ali Baba Snackbar. Alle rechten voorbehouden.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
