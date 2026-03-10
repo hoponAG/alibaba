@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alibaba Hasselt - De Beste Kebab, Friet & Pizza van Hasselt</title>
+    <title>Kebab of Pizza Bestellen in Kortessem? | Menu AliBaba</title>
     <meta name="description"
-        content="Ontdek de heerlijkste kebab, verse frieten en authentieke pizza's bij Alibaba Hasselt. Al jarenlang een begrip voor kwaliteit en smaak. Bekijk ons menu en bestel direct!">
+        content="Zin in authentieke kebab, goedgevulde schotels of een verse pizza in Kortessem? Bij AliBaba ben je aan het juiste adres voor afhaal en bezorging. Bekijk ons menu!">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="Alibaba Hasselt - De Beste Kebab, Friet & Pizza">
-    <meta property="og:description" content="Verse ingrediënten en de beste pizza's van Hasselt. Bestel direct!">
+    <meta property="og:title" content="Kebab of Pizza Bestellen in Kortessem? | Menu AliBaba">
+    <meta property="og:description"
+        content="Zin in authentieke kebab, goedgevulde schotels of een verse pizza in Kortessem? Bij AliBaba ben je aan het juiste adres voor afhaal en bezorging. Bekijk ons menu!">
     <meta property="og:image" content="Assets/logo-small.png">
     <meta property="og:url" content="https://alibaba.wp1.host/">
     <meta name="twitter:card" content="summary_large_image">
@@ -24,6 +25,114 @@
 
     <link rel="stylesheet" href="css/style.css?v=1.8">
     <link rel="icon" type="image/png" href="Assets/Favicon.png">
+
+    <!-- JSON-LD Schema: LocalBusiness / Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "AliBaba Kortessem",
+      "image": "https://alibaba.wp1.host/Assets/logo-small.png",
+      "@id": "https://alibaba.wp1.host/",
+      "url": "https://alibaba.wp1.host/",
+      "telephone": "+32490466548",
+      "priceRange": "$",
+      "servesCuisine": ["Kebab", "Pizza", "Friet", "Durum", "Snack"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tongersesteenweg 275",
+        "addressLocality": "Kortessem",
+        "postalCode": "3724",
+        "addressCountry": "BE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.8525, 
+        "longitude": 5.3900
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "16:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "16:00",
+          "closes": "01:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "16:00",
+          "closes": "23:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "150"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": "Jeroen P.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "De beste schotels die ik ooit heb gehad! Vlees is super krokant."
+        }
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Alibaba Menu",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Broodjes",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Biefstuk Broodje", "offers": { "@type": "Offer", "price": "13.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Kip Broodje", "offers": { "@type": "Offer", "price": "12.00", "priceCurrency": "EUR" } }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Pizza",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Pizza Alibaba", "offers": { "@type": "Offer", "price": "16.00", "priceCurrency": "EUR" } },
+              { "@type": "MenuItem", "name": "Pizza Margherita", "offers": { "@type": "Offer", "price": "11.00", "priceCurrency": "EUR" } }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Schema: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Waar kan ik de beste kebab en kapsalon afhalen in Kortessem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bij AliBaba Kortessem (Tongersesteenweg 275) vind je de beste authentieke durums, machtige schotels en krokante pizza's voor afhaal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan ik bij Alibaba verse pizza's afhalen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zeker! Onze pizza's worden authentiek bereid en komen rechtstreeks uit onze hete ovens. Bestel direct online of kom langs."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -59,9 +168,12 @@
             <div class="container hero-layout">
                 <div class="hero-left">
                     <div class="starburst-badge">⭐ Sinds Jaren ⭐</div>
-                    <h1 class="hero-title">DE BESTE<br>SNACK VAN<br>HASSELT</h1>
-                    <p class="hero-desc">Ervaar de pure smaak van authentiek bereide durums, machtige schotels en
-                        krokante pizza's. Altijd supervers en boordevol liefde.</p>
+                    <h1 class="hero-title">
+                        ALIBABA KORTESSEM
+                        <span class="hero-subtitle">Bestel de Beste Kebab, Friet & Pizza voor Afhaal</span>
+                    </h1>
+                    <p class="hero-desc">De beste authentieke durums, machtige schotels en krokante pizza's. Bestel
+                        direct online of kom gezellig langs om jouw favoriete maaltijd vers af te halen.</p>
                     <a href="#menu" class="btn-primary btn-large">Bekijk Menu</a>
                 </div>
 
@@ -84,11 +196,12 @@
         <!-- About Us Section -->
         <section class="about-v4" id="about">
             <div class="container text-center max-w-lg">
-                <h2 class="section-title text-orange">ROOTED IN TRADITION</h2>
-                <h3 class="section-subtitle">Meer dan alleen een snelle hap.</h3>
+                <h2 class="section-title text-orange">VERS & AUTHENTIEK</h2>
+                <h3 class="section-subtitle">Waar kwaliteit en smaak samenkomen.</h3>
                 <p class="body-text">Bij Alibaba geloven we dat goed comfort food begint bij de juiste ingrediënten en
-                    een glimlach. Of je nu langskomt voor een snelle bicky, een rijkgevulde kapsalon of onze signature
-                    Alibaba schotel, wij zorgen dat je met een overvolle buik en een goed gevoel de deur uit gaat.</p>
+                    een glimlach. Meer dan alleen een snelle hap, bieden wij de absolute top in verse snacks. Of je nu
+                    langskomt voor een snelle bicky, een rijkgevulde kapsalon of onze signature Alibaba schotel, wij
+                    zorgen dat je met een overvolle buik en een goed gevoel de deur uit gaat.</p>
             </div>
 
             <!-- Three mini arches -->
@@ -108,6 +221,39 @@
             </div>
 
             <div class="wavy-divider"></div>
+        </section>
+
+        <section class="hardlopers-v4">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Welke favoriete gerechten staan er op het menu?</h2>
+                    <p class="body-text">Onze klanten in Kortessem en omstreken weten ons te vinden voor onze hete
+                        ovens, topkwaliteit en grote porties voor kleine prijzen. Zoals onze klant Jeroen P. het mooi
+                        verwoordt: "De beste schotels die ik ooit heb gehad! Vlees is super krokant."</p>
+                    <p class="body-text mt-3">We maken van elke bestelling een feestje. Lokale zoekers en vaste klanten
+                        zijn dol op onze specifieke hardlopers:</p>
+                </div>
+
+                <div class="hardlopers-grid">
+                    <div class="h-card">
+                        <div class="h-icon-box bg-orange-light">🍕</div>
+                        <h4>De Alibaba Pizza (Specialiteit)</h4>
+                        <p>Een rijkelijk belegde pizza met kip, kebabvlees, champignons, paprika en ajuin.</p>
+                    </div>
+                    <div class="h-card">
+                        <div class="h-icon-box bg-yellow-light">🍟</div>
+                        <h4>Porties Friet & Snacks</h4>
+                        <p class="small-p">Knapperige frietjes en authentieke snacks. Kevin B.: "Goede prijzen, mega
+                            grote porties. Frietjes zijn heerlijk."</p>
+                    </div>
+                    <div class="h-card">
+                        <div class="h-icon-box bg-teal-light">🥗</div>
+                        <h4>Verse Veggie Opties</h4>
+                        <p class="small-p">Probeer onze knapperige falafel, vegetarische burgers of een complete
+                            rijkgevulde veggie schotel.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Volledig Menu (Pill Tabs) -->
@@ -453,20 +599,17 @@
                                 alt="Pizza"></div>
                         <div class="slide arch-slide"><img src="Assets/Beelden/kebab_durum_1772932360114.png"
                                 alt="Durum"></div>
-                        <div class="slide arch-slide"><img src="Assets/Beelden/snackbar_interior_1772932400776.png"
-                                alt="Interior"></div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Reviews -->
         <section class="reviews-v4 bg-yellow" id="reviews">
             <div class="container text-center">
                 <h2 class="section-title">HAPPY FACES</h2>
 
                 <div class="review-box-grid">
-                    <!-- Overlay circular badges -->
                     <div class="r-box">
                         <div class="cir-badge">⭐ 5/5</div>
                         <p class="quote">"De beste schotels die ik ooit heb gehad! Vlees is super krokant."</p>
@@ -486,6 +629,42 @@
             </div>
         </section>
 
+        <!-- SEO / FAQ Section -->
+        <section class="faq-v4 bg-light">
+            <div class="container max-w-lg">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">VEELGESTELDE VRAGEN</h2>
+                    <p class="body-text">Alles wat je wilt weten over Alibaba Kortessem.</p>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4 class="faq-question">Waar kan ik de beste kebab en kapsalon afhalen in Kortessem?</h4>
+                        <div class="faq-answer">
+                            <p>Bij Alibaba geloven we dat goed comfort food begint bij de juiste ingrediënten en een
+                                glimlach. Meer dan alleen een snelle hap, bieden wij de absolute top in verse snacks. Of
+                                je nu langskomt voor een snelle bicky, een rijkgevulde kapsalon of onze signature
+                                Alibaba schotel, wij zorgen dat je met een overvolle buik en een goed gevoel de deur uit
+                                gaat.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4 class="faq-question">Kan ik bij Alibaba in de buurt van Kortessem verse pizza's afhalen?
+                        </h4>
+                        <div class="faq-answer">
+                            <p>Zeker weten! Onze pizza's worden authentiek bereid, komen rechtstreeks uit hete ovens en
+                                worden supervers en gloeiend heet aan de toog aan jou meegegeven. Sarah E. liet onlangs
+                                deze review achter over haar warme afhaalmaaltijd: "Pizza is authentiek, warm geleverd
+                                en gigantisch." Of je nu kiest voor een klassieke Margherita met tomatensaus, mozz en
+                                oregano, of gaat voor een goedgevulde Calzone, wij garanderen de pure smaak van ambacht
+                                in elke hap.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer / Contact -->
         <footer class="footer-v4" id="contact">
             <div class="arch-top-footer"></div>
@@ -493,16 +672,16 @@
                 <div class="container footer-grid-layout">
 
                     <div class="f-brand">
-                        <h2>ALI<br>BABA</h2>
+                        <h2>ALIBABA</h2>
                         <a href="tel:+32490466548" class="btn-primary" style="margin-top:20px;">+32 490 46 65 48</a>
                     </div>
 
                     <div class="f-info">
                         <h4>Bezoek Ons</h4>
-                        <p>Tongersesteenweg 275<br>3724 Hasselt</p>
+                        <p>Tongersesteenweg 275<br>3724 Kortessem</p>
 
                         <h4 style="margin-top:30px;">Openingsuren</h4>
-                        <p>Ma - Do: 16:00 - 22:00<br>Vr - Zo: 16:00 - 23:30</p>
+                        <p>Ma - Do: 16:00 - 22:00<br>Vr - Za: 16:00 - 01:00<br>Zondag: 16:00 - 23:00</p>
                     </div>
 
                     <div class="f-vector">

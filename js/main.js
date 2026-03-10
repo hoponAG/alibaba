@@ -162,4 +162,30 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power2.out"
     });
 
+    // Hardlopers Animation
+    gsap.from(".h-card", {
+        scrollTrigger: {
+            trigger: ".hardlopers-v4",
+            start: "top 80%",
+        },
+        y: 60,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "back.out(1.2)"
+    });
+
+    // FAQ Animation
+    gsap.from(".faq-item", {
+        scrollTrigger: {
+            trigger: ".faq-v4",
+            start: "top 85%",
+        },
+        x: -50,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
+
 });
