@@ -5,8 +5,8 @@
     /* Slightly lighter than brand-light for a clean app look */
     color: var(--brand-dark);
     line-height: 1.5;
-    padding-top: 140px;
-    /* Space for fixed header */
+    padding-top: 180px;
+    /* Space for fixed header (nav + tabs + search) */
 }
 
 /* Header & Search */
@@ -116,7 +116,7 @@
 
 .menu-section {
     margin-bottom: 30px;
-    scroll-margin-top: 150px;
+    scroll-margin-top: 190px;
 }
 
 .category-title {
