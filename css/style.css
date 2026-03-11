@@ -258,6 +258,17 @@ body.no-scroll {
 
 @media (max-width: 991px) {
     .nav-promo {
+        padding: 4px 10px;
+        background: transparent;
+        border: none;
+    }
+
+    .promo-text {
+        font-size: 0.8rem;
+    }
+
+    /* Hide promo text when the menu is fully expanded/active for cleaner look */
+    .pill-nav-v4.active .nav-promo {
         display: none;
     }
 }
