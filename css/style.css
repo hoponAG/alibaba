@@ -228,7 +228,38 @@ body.no-scroll {
     height: 45px;
     margin-left: 10px;
     display: block;
-    /* Restored */
+}
+
+.nav-promo {
+    background: var(--brand-light);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 6px 16px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.promo-badge {
+    background: var(--c-orange);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.promo-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--brand-dark);
+}
+
+@media (max-width: 991px) {
+    .nav-promo {
+        display: none;
+    }
 }
 
 .nav-links {
