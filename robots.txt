@@ -27,4 +27,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://alibaba.wp1.host/sitemap.xml
+Sitemap: https://alibaba-snack.be/sitemap.xml
